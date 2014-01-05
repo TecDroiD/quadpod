@@ -1,0 +1,29 @@
+/*
+ * servo.h
+ *
+ *  Created on: 04.01.2014
+ *      Author: tecdroid
+ */
+
+#ifndef SERVO_H_
+#define SERVO_H_
+
+#include <avr/io.h>
+#include <avr/interrupt.h>
+
+#define TIMEBASE 255000
+#define CALCOCR (int)(F_CPU / TIMEBASE)
+
+
+typedef struct s_servo {
+	volatile unsigned char *DDR;
+	volatile unsigned char *PORT;
+	volatile char pinmask;
+	volatile char value;
+} t_servo, *p_servo;
+
+
+void init_servos (p_servo pservos, int cnt );
+void init_servotimer (void);
+
+#endif /* SERVO_H_ */

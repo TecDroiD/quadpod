@@ -1,0 +1,173 @@
+# EESchema Netlist Version 1.1 created  Fr 03 Jan 2014 09:34:22 CET
+(
+ ( /52C64FDE C1V5 C1 1µ
+  ( 1 VCC )
+  ( 2 GND )
+ )
+ ( /52C64E27 C2 C2 100n
+  ( 1 PWR )
+  ( 2 GND )
+ )
+ ( /52C66133 C1 C3 22p
+  ( 1 XTAL2 )
+  ( 2 GND )
+ )
+ ( /52C6613C C1 C4 22p
+  ( 1 XTAL1 )
+  ( 2 GND )
+ )
+ ( /52C64E55 SIL-2 P1 Batt
+  ( 1 VCC )
+  ( 2 GND )
+ )
+ ( /52C65067 SIL-4 P2 UART
+  ( 1 PWR )
+  ( 2 TX )
+  ( 3 RX )
+  ( 4 GND )
+ )
+ ( /52C65377 pin_array_3x2 P3 ISP6
+  ( 1 MISO )
+  ( 2 PWR )
+  ( 3 SCK )
+  ( 4 MOSI )
+  ( 5 RST )
+  ( 6 GND )
+ )
+ ( /52C65434 SIL-3 P4 SERVO
+  ( 1 SERVO_0 )
+  ( 2 PWR )
+  ( 3 GND )
+ )
+ ( /52C65D46 SIL-3 P5 SERVO
+  ( 1 SERVO_1 )
+  ( 2 PWR )
+  ( 3 GND )
+ )
+ ( /52C65D35 SIL-3 P6 SERVO
+  ( 1 SERVO_2 )
+  ( 2 PWR )
+  ( 3 GND )
+ )
+ ( /52C65D43 SIL-3 P7 SERVO
+  ( 1 SERVO_3 )
+  ( 2 PWR )
+  ( 3 GND )
+ )
+ ( /52C65D59 SIL-3 P8 SERVO
+  ( 1 SERVO_4 )
+  ( 2 PWR )
+  ( 3 GND )
+ )
+ ( /52C65D52 SIL-3 P9 SERVO
+  ( 1 SERVO_5 )
+  ( 2 PWR )
+  ( 3 GND )
+ )
+ ( /52C65D56 SIL-3 P10 SERVO
+  ( 1 MOSI )
+  ( 2 PWR )
+  ( 3 GND )
+ )
+ ( /52C65D55 SIL-3 P11 SERVO
+  ( 1 MISO )
+  ( 2 PWR )
+  ( 3 GND )
+ )
+ ( /52C65D6B SIL-3 P12 SENSOR
+  ( 1 SENSOR_0 )
+  ( 2 PWR )
+  ( 3 GND )
+ )
+ ( /52C65EF6 SIL-3 P13 SENSOR
+  ( 1 SENSOR_1 )
+  ( 2 PWR )
+  ( 3 GND )
+ )
+ ( /52C65EE8 SIL-3 P14 SENSOR
+  ( 1 SENSOR_2 )
+  ( 2 PWR )
+  ( 3 GND )
+ )
+ ( /52C65EF3 SIL-3 P15 SENSOR
+  ( 1 SENSOR_3 )
+  ( 2 PWR )
+  ( 3 GND )
+ )
+ ( /52C65F00 SIL-3 P16 SENSOR
+  ( 1 SENSOR_4 )
+  ( 2 PWR )
+  ( 3 GND )
+ )
+ ( /52C65EFF SIL-3 P17 SENSOR
+  ( 1 SENSOR_5 )
+  ( 2 PWR )
+  ( 3 GND )
+ )
+ ( /52C6694F TO220_VERT U1 LD1084
+  ( 1 GND )
+  ( 2 PWR )
+  ( 3 VCC )
+ )
+ ( /52C64DFA DIP-28__300_ELL U2 ATMEGA168-P
+  ( 1 RST )
+  ( 2 RX )
+  ( 3 TX )
+  ( 4 ? )
+  ( 5 ? )
+  ( 6 ? )
+  ( 7 PWR )
+  ( 8 GND )
+  ( 9 XTAL1 )
+  ( 10 XTAL2 )
+  ( 11 SERVO_0 )
+  ( 12 SERVO_1 )
+  ( 13 SERVO_2 )
+  ( 14 SERVO_3 )
+  ( 15 SERVO_4 )
+  ( 16 SERVO_5 )
+  ( 17 MOSI )
+  ( 18 MISO )
+  ( 19 SCK )
+  ( 20 PWR )
+  ( 21 PWR )
+  ( 22 GND )
+  ( 23 SENSOR_0 )
+  ( 24 SENSOR_1 )
+  ( 25 SENSOR_2 )
+  ( 26 SENSOR_3 )
+  ( 27 SENSOR_4 )
+  ( 28 SENSOR_5 )
+ )
+ ( /52C66143 HC-49V X1 20MHz
+  ( 1 XTAL2 )
+  ( 2 XTAL1 )
+ )
+)
+*
+{ Allowed footprints by component:
+$component C1
+ CP*
+ SM*
+$endlist
+$component C2
+ SM*
+ C?
+ C1-1
+$endlist
+$component C3
+ SM*
+ C?
+ C1-1
+$endlist
+$component C4
+ SM*
+ C?
+ C1-1
+$endlist
+$component U2
+ 28DIP-ELL600
+ 28dip600
+$endlist
+$endfootprintlist
+}

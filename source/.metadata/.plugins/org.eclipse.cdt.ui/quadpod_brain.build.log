@@ -1,0 +1,49 @@
+10:18:07 **** Incremental Build of configuration Release for project quadpod_brain ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega8 -DF_CPU=16000000UL -MMD -MP -MF"src/main.d" -MT"src/main.d" -c -o "src/main.o" "../src/main.c"
+../src/main.c: In function ‘main’:
+../src/main.c:33:6: warning: unused variable ‘cnt’ [-Wunused-variable]
+Finished building: ../src/main.c
+ 
+Building file: ../src/uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega8 -DF_CPU=16000000UL -MMD -MP -MF"src/uart.d" -MT"src/uart.d" -c -o "src/uart.o" "../src/uart.c"
+Finished building: ../src/uart.c
+ 
+Building target: quadpod_brain.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,quadpod_brain.map -mmcu=atmega8 -o "quadpod_brain.elf"  ./src/gpio.o ./src/main.o ./src/servo.o ./src/uart.o   
+Finished building target: quadpod_brain.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S quadpod_brain.elf  >"quadpod_brain.lss"
+Finished building: quadpod_brain.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -O ihex quadpod_brain.elf  "quadpod_brain.hex"
+Finished building: quadpod_brain.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex quadpod_brain.elf  "quadpod_brain.eep"
+Finished building: quadpod_brain.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega8 quadpod_brain.elf
+AVR Memory Usage
+----------------
+Device: atmega8
+
+Program:     794 bytes (9.7% Full)
+(.text + .data + .bootloader)
+
+Data:         66 bytes (6.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+10:18:07 Build Finished (took 227ms)
+

@@ -1,0 +1,60 @@
+/*
+ * servo.c
+ *
+ *  Created on: 04.01.2014
+ *      Author: tecdroid
+ */
+
+#include "servo.h"
+
+p_servo _servos = 0;
+
+int  cntservos = 0;
+int  actservo = 0;
+
+void init_servos (p_servo pservos, int cnt ) {
+	_servos = pservos;
+	cntservos = cnt;
+
+	int i;
+	for (i= 0; i < cntservos; i++) {
+		p_servo servo = &_servos[i];
+		*(servo->DDR) |= servo->pinmask;
+		set_servo(i, 128);
+	}
+
+	// Timer läuft für 8 Bit Auflösung mit ca. 255kHz
+	// CTC, Top = ORC1A, Vorteiler 64
+	TCCR1B |= (1<<WGM12) | (1<<CS11) | (1<<CS10);
+	actservo = cntservos;
+}
+
+// servotimer aktiv
+ISR(TIMER1_COMPA_vect) {
+	p_servo servo = 0;
+
+	// vorherigen Servo abschalten
+	if (0 <= actservo -1) {
+		servo = &_servos[actservo-1];
+		*(servo->PORT) &= ~(servo->pinmask);
+	}
+
+	// den nächsten Servo aktivieren
+	// nach dem letzten Servo 12ms Pause
+	if (actservo < cntservos) {
+		p_servo servo = &_servos[actservo];
+		OCR1A = servo->value;
+		*(servo->PORT) |= servo->pinmask;
+		actservo++;
+	} else {
+		OCR1A = PAUSE;
+		actservo = 0;
+	}
+}
+
+// setze den Servowert
+void set_servo(int id, uint8_t value) {
+	if (id > 0 && id < cntservos) {
+		_servos[id].value = 255 + value;
+	}
+}

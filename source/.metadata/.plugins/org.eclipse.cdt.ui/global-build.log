@@ -1,0 +1,1599 @@
+12:01:50 **** Build of configuration Release for project quadpod_brain ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega168 -DF_CPU=20000000UL -MMD -MP -MF"src/main.d" -MT"src/main.d" -c -o "src/main.o" "../src/main.c"
+../src/main.c:20:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+Finished building: ../src/main.c
+../src/main.c:20:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+ 
+../src/main.c:21:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+Building target: quadpod_brain.elf
+Invoking: AVR C Linker
+../src/main.c:21:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+avr-gcc -Wl,-Map,quadpod_brain.map -mmcu=atmega168 -o "quadpod_brain.elf"  ./src/main.o   
+../src/main.c:22:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+../src/main.c:22:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+../src/main.c:23:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+../src/main.c:23:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+../src/main.c:25:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+../src/main.c:25:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+../src/main.c:26:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+../src/main.c:26:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+../src/main.c:27:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+../src/main.c:27:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+../src/main.c:28:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+../src/main.c:28:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+Finished building target: quadpod_brain.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S quadpod_brain.elf  >"quadpod_brain.lss"
+Finished building: quadpod_brain.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -O ihex quadpod_brain.elf  "quadpod_brain.hex"
+Finished building: quadpod_brain.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex quadpod_brain.elf  "quadpod_brain.eep"
+Finished building: quadpod_brain.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega168 quadpod_brain.elf
+AVR Memory Usage
+----------------
+Device: atmega168
+
+Program:     208 bytes (1.3% Full)
+(.text + .data + .bootloader)
+
+Data:         48 bytes (4.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:41:57 **** Incremental Build of configuration Release for project quadpod_brain ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega168 -DF_CPU=20000000UL -MMD -MP -MF"src/main.d" -MT"src/main.d" -c -o "src/main.o" "../src/main.c"
+../src/main.c:21:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+../src/main.c:21:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+../src/main.c:22:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+../src/main.c:22:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+../src/main.c:23:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+Finished building: ../src/main.c
+../src/main.c:23:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+ 
+../src/main.c:24:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+Building target: quadpod_brain.elf
+../src/main.c:24:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+Invoking: AVR C Linker
+../src/main.c:26:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+../src/main.c:26:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+avr-gcc -Wl,-Map,quadpod_brain.map -mmcu=atmega168 -o "quadpod_brain.elf"  ./src/main.o   
+../src/main.c:27:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+Finished building target: quadpod_brain.elf
+../src/main.c:27:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+ 
+../src/main.c:28:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+Invoking: AVR Create Extended Listing
+../src/main.c:28:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+avr-objdump -h -S quadpod_brain.elf  >"quadpod_brain.lss"
+../src/main.c:29:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+Finished building: quadpod_brain.lss
+../src/main.c:29:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -O ihex quadpod_brain.elf  "quadpod_brain.hex"
+Finished building: quadpod_brain.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex quadpod_brain.elf  "quadpod_brain.eep"
+Finished building: quadpod_brain.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega168 quadpod_brain.elf
+AVR Memory Usage
+----------------
+Device: atmega168
+
+Program:     262 bytes (1.6% Full)
+(.text + .data + .bootloader)
+
+Data:         48 bytes (4.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:56:03 **** Incremental Build of configuration Release for project quadpod_brain ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega168 -DF_CPU=20000000UL -MMD -MP -MF"src/main.d" -MT"src/main.d" -c -o "src/main.o" "../src/main.c"
+../src/main.c:21:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+Finished building: ../src/main.c
+../src/main.c:21:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+ 
+../src/main.c:22:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+Building target: quadpod_brain.elf
+../src/main.c:22:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+Invoking: AVR C Linker
+../src/main.c:23:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+../src/main.c:23:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+../src/main.c:24:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+../src/main.c:24:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+avr-gcc -Wl,-Map,quadpod_brain.map -mmcu=atmega168 -o "quadpod_brain.elf"  ./src/main.o   
+../src/main.c:26:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+../src/main.c:26:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+../src/main.c:27:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+../src/main.c:27:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+../src/main.c:28:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+../src/main.c:28:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+../src/main.c:29:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+../src/main.c:29:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+Finished building target: quadpod_brain.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S quadpod_brain.elf  >"quadpod_brain.lss"
+Finished building: quadpod_brain.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -O ihex quadpod_brain.elf  "quadpod_brain.hex"
+Finished building: quadpod_brain.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex quadpod_brain.elf  "quadpod_brain.eep"
+Finished building: quadpod_brain.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega168 quadpod_brain.elf
+AVR Memory Usage
+----------------
+Device: atmega168
+
+Program:     262 bytes (1.6% Full)
+(.text + .data + .bootloader)
+
+Data:         48 bytes (4.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:56:04 **** Incremental Build of configuration Release for project quadpod_brain ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega168 quadpod_brain.elf
+AVR Memory Usage
+----------------
+Device: atmega168
+
+Program:     262 bytes (1.6% Full)
+(.text + .data + .bootloader)
+
+Data:         48 bytes (4.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:56:48 **** Incremental Build of configuration Release for project quadpod_brain ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega168 -DF_CPU=20000000UL -MMD -MP -MF"src/main.d" -MT"src/main.d" -c -o "src/main.o" "../src/main.c"
+../src/main.c:22:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+Finished building: ../src/main.c
+../src/main.c:22:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+ 
+../src/main.c:23:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+Building target: quadpod_brain.elf
+../src/main.c:23:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+Invoking: AVR C Linker
+../src/main.c:24:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+avr-gcc -Wl,-Map,quadpod_brain.map -mmcu=atmega168 -o "quadpod_brain.elf"  ./src/main.o   
+../src/main.c:24:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+Finished building target: quadpod_brain.elf
+../src/main.c:25:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+ 
+../src/main.c:25:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+../src/main.c:27:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+../src/main.c:27:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+../src/main.c:28:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+../src/main.c:28:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+../src/main.c:29:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S quadpod_brain.elf  >"quadpod_brain.lss"
+Finished building: quadpod_brain.lss
+ 
+../src/main.c:29:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+../src/main.c:30:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+../src/main.c:30:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -O ihex quadpod_brain.elf  "quadpod_brain.hex"
+Finished building: quadpod_brain.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex quadpod_brain.elf  "quadpod_brain.eep"
+Finished building: quadpod_brain.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega168 quadpod_brain.elf
+AVR Memory Usage
+----------------
+Device: atmega168
+
+Program:     262 bytes (1.6% Full)
+(.text + .data + .bootloader)
+
+Data:         48 bytes (4.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:57:13 **** Incremental Build of configuration Release for project quadpod_brain ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega168 -DF_CPU=20000000UL -MMD -MP -MF"src/main.d" -MT"src/main.d" -c -o "src/main.o" "../src/main.c"
+../src/main.c:22:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+../src/main.c:22:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+../src/main.c:23:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+Finished building: ../src/main.c
+../src/main.c:23:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+ 
+../src/main.c:24:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+Building target: quadpod_brain.elf
+../src/main.c:24:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+Invoking: AVR C Linker
+../src/main.c:25:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+avr-gcc -Wl,-Map,quadpod_brain.map -mmcu=atmega168 -o "quadpod_brain.elf"  ./src/main.o   
+../src/main.c:25:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+Finished building target: quadpod_brain.elf
+../src/main.c:27:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+ 
+../src/main.c:27:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+Invoking: AVR Create Extended Listing
+../src/main.c:28:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+avr-objdump -h -S quadpod_brain.elf  >"quadpod_brain.lss"
+../src/main.c:28:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+Finished building: quadpod_brain.lss
+../src/main.c:29:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+ 
+../src/main.c:29:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+Create Flash image (ihex format)
+../src/main.c:30:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+avr-objcopy -R .eeprom -O ihex quadpod_brain.elf  "quadpod_brain.hex"
+../src/main.c:30:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+Finished building: quadpod_brain.hex
+../src/main.c: In function ‘main’:
+ 
+../src/main.c:48:19: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex quadpod_brain.elf  "quadpod_brain.eep"
+Finished building: quadpod_brain.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega168 quadpod_brain.elf
+AVR Memory Usage
+----------------
+Device: atmega168
+
+Program:     262 bytes (1.6% Full)
+(.text + .data + .bootloader)
+
+Data:         48 bytes (4.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:57:27 **** Incremental Build of configuration Release for project quadpod_brain ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega168 -DF_CPU=20000000UL -MMD -MP -MF"src/main.d" -MT"src/main.d" -c -o "src/main.o" "../src/main.c"
+../src/main.c:22:3: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+Finished building: ../src/main.c
+../src/main.c:22:3: warning: (near initialization for ‘servos[0].DDR’) [-Wpointer-sign]
+ 
+../src/main.c:22:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+Building target: quadpod_brain.elf
+../src/main.c:23:3: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+Invoking: AVR C Linker
+../src/main.c:23:3: warning: (near initialization for ‘servos[1].DDR’) [-Wpointer-sign]
+avr-gcc -Wl,-Map,quadpod_brain.map -mmcu=atmega168 -o "quadpod_brain.elf"  ./src/main.o   
+../src/main.c:23:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+Finished building target: quadpod_brain.elf
+../src/main.c:24:3: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+ 
+../src/main.c:24:3: warning: (near initialization for ‘servos[2].DDR’) [-Wpointer-sign]
+../src/main.c:24:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+../src/main.c:25:3: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+../src/main.c:25:3: warning: (near initialization for ‘servos[3].DDR’) [-Wpointer-sign]
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S quadpod_brain.elf  >"quadpod_brain.lss"
+Finished building: quadpod_brain.lss
+ 
+../src/main.c:25:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+Create Flash image (ihex format)
+../src/main.c:27:3: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+avr-objcopy -R .eeprom -O ihex quadpod_brain.elf  "quadpod_brain.hex"
+../src/main.c:27:3: warning: (near initialization for ‘servos[4].DDR’) [-Wpointer-sign]
+Finished building: quadpod_brain.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex quadpod_brain.elf  "quadpod_brain.eep"
+../src/main.c:27:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+../src/main.c:28:3: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+../src/main.c:28:3: warning: (near initialization for ‘servos[5].DDR’) [-Wpointer-sign]
+../src/main.c:28:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+../src/main.c:29:3: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+../src/main.c:29:3: warning: (near initialization for ‘servos[6].DDR’) [-Wpointer-sign]
+../src/main.c:29:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+../src/main.c:30:3: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+../src/main.c:30:3: warning: (near initialization for ‘servos[7].DDR’) [-Wpointer-sign]
+../src/main.c:30:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+../src/main.c: In function ‘main’:
+../src/main.c:48:19: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+Finished building: quadpod_brain.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega168 quadpod_brain.elf
+AVR Memory Usage
+----------------
+Device: atmega168
+
+Program:     262 bytes (1.6% Full)
+(.text + .data + .bootloader)
+
+Data:         48 bytes (4.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:57:41 **** Incremental Build of configuration Release for project quadpod_brain ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega168 -DF_CPU=20000000UL -MMD -MP -MF"src/main.d" -MT"src/main.d" -c -o "src/main.o" "../src/main.c"
+../src/main.c:22:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+Finished building: ../src/main.c
+../src/main.c:23:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+ 
+../src/main.c:24:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+Building target: quadpod_brain.elf
+../src/main.c:25:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+Invoking: AVR C Linker
+../src/main.c:27:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+avr-gcc -Wl,-Map,quadpod_brain.map -mmcu=atmega168 -o "quadpod_brain.elf"  ./src/main.o   
+../src/main.c:28:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+Finished building target: quadpod_brain.elf
+../src/main.c:29:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+ 
+../src/main.c:30:3: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S quadpod_brain.elf  >"quadpod_brain.lss"
+../src/main.c: In function ‘main’:
+../src/main.c:48:19: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+Finished building: quadpod_brain.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -O ihex quadpod_brain.elf  "quadpod_brain.hex"
+Finished building: quadpod_brain.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex quadpod_brain.elf  "quadpod_brain.eep"
+Finished building: quadpod_brain.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega168 quadpod_brain.elf
+AVR Memory Usage
+----------------
+Device: atmega168
+
+Program:     262 bytes (1.6% Full)
+(.text + .data + .bootloader)
+
+Data:         48 bytes (4.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:58:23 **** Incremental Build of configuration Release for project quadpod_brain ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega168 -DF_CPU=20000000UL -MMD -MP -MF"src/main.d" -MT"src/main.d" -c -o "src/main.o" "../src/main.c"
+../src/main.c: In function ‘main’:
+../src/main.c:48:19: warning: initialization discards ‘volatile’ qualifier from pointer target type [enabled by default]
+Finished building: ../src/main.c
+ 
+Building target: quadpod_brain.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,quadpod_brain.map -mmcu=atmega168 -o "quadpod_brain.elf"  ./src/main.o   
+Finished building target: quadpod_brain.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S quadpod_brain.elf  >"quadpod_brain.lss"
+Finished building: quadpod_brain.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -O ihex quadpod_brain.elf  "quadpod_brain.hex"
+Finished building: quadpod_brain.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex quadpod_brain.elf  "quadpod_brain.eep"
+Finished building: quadpod_brain.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega168 quadpod_brain.elf
+AVR Memory Usage
+----------------
+Device: atmega168
+
+Program:     262 bytes (1.6% Full)
+(.text + .data + .bootloader)
+
+Data:         48 bytes (4.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:58:46 **** Incremental Build of configuration Release for project quadpod_brain ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega168 -DF_CPU=20000000UL -MMD -MP -MF"src/main.d" -MT"src/main.d" -c -o "src/main.o" "../src/main.c"
+../src/main.c:13:16: error: expected ‘{’ before ‘volatile’
+../src/main.c:18:3: warning: data definition has no type or storage class [enabled by default]
+../src/main.c:18:3: warning: type defaults to ‘int’ in declaration of ‘t_servo’ [enabled by default]
+../src/main.c:18:13: warning: type defaults to ‘int’ in declaration of ‘p_servo’ [enabled by default]
+../src/main.c:21:18: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘servos’
+../src/main.c: In function ‘main’:
+../src/main.c:48:3: warning: statement with no effect [-Wunused-value]
+../src/main.c:48:11: error: expected ‘;’ before ‘servo’
+../src/main.c:49:5: error: ‘servo’ undeclared (first use in this function)
+../src/main.c:49:5: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] Fehler 1
+12:59:00 **** Incremental Build of configuration Release for project quadpod_brain ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega168 -DF_CPU=20000000UL -MMD -MP -MF"src/main.d" -MT"src/main.d" -c -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: quadpod_brain.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,quadpod_brain.map -mmcu=atmega168 -o "quadpod_brain.elf"  ./src/main.o   
+Finished building target: quadpod_brain.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S quadpod_brain.elf  >"quadpod_brain.lss"
+Finished building: quadpod_brain.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -O ihex quadpod_brain.elf  "quadpod_brain.hex"
+Finished building: quadpod_brain.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex quadpod_brain.elf  "quadpod_brain.eep"
+Finished building: quadpod_brain.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega168 quadpod_brain.elf
+AVR Memory Usage
+----------------
+Device: atmega168
+
+Program:     262 bytes (1.6% Full)
+(.text + .data + .bootloader)
+
+Data:         48 bytes (4.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:00:14 **** Incremental Build of configuration Release for project quadpod_brain ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega168 quadpod_brain.elf
+AVR Memory Usage
+----------------
+Device: atmega168
+
+Program:     262 bytes (1.6% Full)
+(.text + .data + .bootloader)
+
+Data:         48 bytes (4.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:00:21 **** Clean-only build of configuration Release for project quadpod_brain ****
+make clean 
+rm -rf  ./src/main.o  ./src/main.d  quadpod_brain.eep  quadpod_brain.hex  quadpod_brain.lss  sizedummy  quadpod_brain.elf
+ 
+13:00:21 **** Build of configuration Release for project quadpod_brain ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega168 -DF_CPU=20000000UL -MMD -MP -MF"src/main.d" -MT"src/main.d" -c -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: quadpod_brain.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,quadpod_brain.map -mmcu=atmega168 -o "quadpod_brain.elf"  ./src/main.o   
+Finished building target: quadpod_brain.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S quadpod_brain.elf  >"quadpod_brain.lss"
+Finished building: quadpod_brain.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -O ihex quadpod_brain.elf  "quadpod_brain.hex"
+Finished building: quadpod_brain.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex quadpod_brain.elf  "quadpod_brain.eep"
+Finished building: quadpod_brain.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega168 quadpod_brain.elf
+AVR Memory Usage
+----------------
+Device: atmega168
+
+Program:     262 bytes (1.6% Full)
+(.text + .data + .bootloader)
+
+Data:         48 bytes (4.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:00:25 **** Incremental Build of configuration Release for project quadpod_brain ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega168 -DF_CPU=20000000UL -MMD -MP -MF"src/main.d" -MT"src/main.d" -c -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: quadpod_brain.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,quadpod_brain.map -mmcu=atmega168 -o "quadpod_brain.elf"  ./src/main.o   
+Finished building target: quadpod_brain.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S quadpod_brain.elf  >"quadpod_brain.lss"
+Finished building: quadpod_brain.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -O ihex quadpod_brain.elf  "quadpod_brain.hex"
+Finished building: quadpod_brain.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex quadpod_brain.elf  "quadpod_brain.eep"
+Finished building: quadpod_brain.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega168 quadpod_brain.elf
+AVR Memory Usage
+----------------
+Device: atmega168
+
+Program:     262 bytes (1.6% Full)
+(.text + .data + .bootloader)
+
+Data:         48 bytes (4.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:00:32 **** Clean-only build of configuration Release for project quadpod_brain ****
+make clean 
+rm -rf  ./src/main.o  ./src/main.d  quadpod_brain.eep  quadpod_brain.hex  quadpod_brain.lss  sizedummy  quadpod_brain.elf
+ 
+13:42:41 **** Build of configuration Release for project quadpod_brain ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega168 -DF_CPU=20000000UL -MMD -MP -MF"src/main.d" -MT"src/main.d" -c -o "src/main.o" "../src/main.c"
+../src/main.c:13:1: error: unknown type name ‘t_servo’
+../src/main.c:14:3: warning: braces around scalar initializer [enabled by default]
+../src/main.c:14:3: warning: (near initialization for ‘servos[0]’) [enabled by default]
+../src/main.c:14:3: warning: initialization makes integer from pointer without a cast [enabled by default]
+../src/main.c:14:3: warning: (near initialization for ‘servos[0]’) [enabled by default]
+../src/main.c:14:3: warning: excess elements in scalar initializer [enabled by default]
+../src/main.c:14:3: warning: (near initialization for ‘servos[0]’) [enabled by default]
+../src/main.c:14:3: warning: excess elements in scalar initializer [enabled by default]
+../src/main.c:14:3: warning: (near initialization for ‘servos[0]’) [enabled by default]
+../src/main.c:14:3: warning: excess elements in scalar initializer [enabled by default]
+../src/main.c:14:3: warning: (near initialization for ‘servos[0]’) [enabled by default]
+../src/main.c:15:3: warning: braces around scalar initializer [enabled by default]
+../src/main.c:15:3: warning: (near initialization for ‘servos[1]’) [enabled by default]
+../src/main.c:15:3: warning: initialization makes integer from pointer without a cast [enabled by default]
+../src/main.c:15:3: warning: (near initialization for ‘servos[1]’) [enabled by default]
+../src/main.c:15:3: warning: excess elements in scalar initializer [enabled by default]
+../src/main.c:15:3: warning: (near initialization for ‘servos[1]’) [enabled by default]
+../src/main.c:15:3: warning: excess elements in scalar initializer [enabled by default]
+../src/main.c:15:3: warning: (near initialization for ‘servos[1]’) [enabled by default]
+../src/main.c:15:3: warning: excess elements in scalar initializer [enabled by default]
+../src/main.c:15:3: warning: (near initialization for ‘servos[1]’) [enabled by default]
+../src/main.c:16:3: warning: braces around scalar initializer [enabled by default]
+../src/main.c:16:3: warning: (near initialization for ‘servos[2]’) [enabled by default]
+../src/main.c:16:3: warning: initialization makes integer from pointer without a cast [enabled by default]
+../src/main.c:16:3: warning: (near initialization for ‘servos[2]’) [enabled by default]
+../src/main.c:16:3: warning: excess elements in scalar initializer [enabled by default]
+../src/main.c:16:3: warning: (near initialization for ‘servos[2]’) [enabled by default]
+../src/main.c:16:3: warning: excess elements in scalar initializer [enabled by default]
+../src/main.c:16:3: warning: (near initialization for ‘servos[2]’) [enabled by default]
+../src/main.c:16:3: warning: excess elements in scalar initializer [enabled by default]
+../src/main.c:16:3: warning: (near initialization for ‘servos[2]’) [enabled by default]
+../src/main.c:17:3: warning: braces around scalar initializer [enabled by default]
+../src/main.c:17:3: warning: (near initialization for ‘servos[3]’) [enabled by default]
+../src/main.c:17:3: warning: initialization makes integer from pointer without a cast [enabled by default]
+../src/main.c:17:3: warning: (near initialization for ‘servos[3]’) [enabled by default]
+../src/main.c:17:3: warning: excess elements in scalar initializer [enabled by default]
+../src/main.c:17:3: warning: (near initialization for ‘servos[3]’) [enabled by default]
+../src/main.c:17:3: warning: excess elements in scalar initializer [enabled by default]
+../src/main.c:17:3: warning: (near initialization for ‘servos[3]’) [enabled by default]
+../src/main.c:17:3: warning: excess elements in scalar initializer [enabled by default]
+../src/main.c:17:3: warning: (near initialization for ‘servos[3]’) [enabled by default]
+../src/main.c:19:3: warning: braces around scalar initializer [enabled by default]
+../src/main.c:19:3: warning: (near initialization for ‘servos[4]’) [enabled by default]
+../src/main.c:19:3: warning: initialization makes integer from pointer without a cast [enabled by default]
+../src/main.c:19:3: warning: (near initialization for ‘servos[4]’) [enabled by default]
+../src/main.c:19:3: warning: excess elements in scalar initializer [enabled by default]
+../src/main.c:19:3: warning: (near initialization for ‘servos[4]’) [enabled by default]
+../src/main.c:19:3: warning: excess elements in scalar initializer [enabled by default]
+../src/main.c:19:3: warning: (near initialization for ‘servos[4]’) [enabled by default]
+../src/main.c:19:3: warning: excess elements in scalar initializer [enabled by default]
+../src/main.c:19:3: warning: (near initialization for ‘servos[4]’) [enabled by default]
+../src/main.c:20:3: warning: braces around scalar initializer [enabled by default]
+../src/main.c:20:3: warning: (near initialization for ‘servos[5]’) [enabled by default]
+../src/main.c:20:3: warning: initialization makes integer from pointer without a cast [enabled by default]
+../src/main.c:20:3: warning: (near initialization for ‘servos[5]’) [enabled by default]
+../src/main.c:20:3: warning: excess elements in scalar initializer [enabled by default]
+../src/main.c:20:3: warning: (near initialization for ‘servos[5]’) [enabled by default]
+../src/main.c:20:3: warning: excess elements in scalar initializer [enabled by default]
+../src/main.c:20:3: warning: (near initialization for ‘servos[5]’) [enabled by default]
+../src/main.c:20:3: warning: excess elements in scalar initializer [enabled by default]
+../src/main.c:20:3: warning: (near initialization for ‘servos[5]’) [enabled by default]
+../src/main.c:21:3: warning: braces around scalar initializer [enabled by default]
+../src/main.c:21:3: warning: (near initialization for ‘servos[6]’) [enabled by default]
+../src/main.c:21:3: warning: initialization makes integer from pointer without a cast [enabled by default]
+../src/main.c:21:3: warning: (near initialization for ‘servos[6]’) [enabled by default]
+../src/main.c:21:3: warning: excess elements in scalar initializer [enabled by default]
+../src/main.c:21:3: warning: (near initialization for ‘servos[6]’) [enabled by default]
+../src/main.c:21:3: warning: excess elements in scalar initializer [enabled by default]
+../src/main.c:21:3: warning: (near initialization for ‘servos[6]’) [enabled by default]
+../src/main.c:21:3: warning: excess elements in scalar initializer [enabled by default]
+../src/main.c:21:3: warning: (near initialization for ‘servos[6]’) [enabled by default]
+../src/main.c:22:3: warning: braces around scalar initializer [enabled by default]
+../src/main.c:22:3: warning: (near initialization for ‘servos[7]’) [enabled by default]
+../src/main.c:22:3: warning: initialization makes integer from pointer without a cast [enabled by default]
+../src/main.c:22:3: warning: (near initialization for ‘servos[7]’) [enabled by default]
+../src/main.c:22:3: warning: excess elements in scalar initializer [enabled by default]
+../src/main.c:22:3: warning: (near initialization for ‘servos[7]’) [enabled by default]
+../src/main.c:22:3: warning: excess elements in scalar initializer [enabled by default]
+../src/main.c:22:3: warning: (near initialization for ‘servos[7]’) [enabled by default]
+../src/main.c:22:3: warning: excess elements in scalar initializer [enabled by default]
+../src/main.c:22:3: warning: (near initialization for ‘servos[7]’) [enabled by default]
+../src/main.c: In function ‘main’:
+../src/main.c:41:2: warning: implicit declaration of function ‘init_servos’ [-Wimplicit-function-declaration]
+../src/main.c:44:2: warning: implicit declaration of function ‘init_servotimer’ [-Wimplicit-function-declaration]
+../src/main.c:35:6: warning: unused variable ‘cnt’ [-Wunused-variable]
+make: *** [src/main.o] Fehler 1
+14:06:36 **** Incremental Build of configuration Release for project quadpod_brain ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega168 -DF_CPU=20000000UL -MMD -MP -MF"src/main.d" -MT"src/main.d" -c -o "src/main.o" "../src/main.c"
+../src/main.c:13:1: error: unknown type name ‘t_servo’
+../src/main.c:14:3: warning: braces around scalar initializer [enabled by default]
+../src/main.c:14:3: warning: (near initialization for ‘servos[0]’) [enabled by default]
+../src/main.c:14:3: warning: initialization makes integer from pointer without a cast [enabled by default]
+../src/main.c:14:3: warning: (near initialization for ‘servos[0]’) [enabled by default]
+../src/main.c:14:3: warning: excess elements in scalar initializer [enabled by default]
+../src/main.c:14:3: warning: (near initialization for ‘servos[0]’) [enabled by default]
+../src/main.c:14:3: warning: excess elements in scalar initializer [enabled by default]
+../src/main.c:14:3: warning: (near initialization for ‘servos[0]’) [enabled by default]
+../src/main.c:14:3: warning: excess elements in scalar initializer [enabled by default]
+../src/main.c:14:3: warning: (near initialization for ‘servos[0]’) [enabled by default]
+../src/main.c:15:3: warning: braces around scalar initializer [enabled by default]
+../src/main.c:15:3: warning: (near initialization for ‘servos[1]’) [enabled by default]
+../src/main.c:15:3: warning: initialization makes integer from pointer without a cast [enabled by default]
+../src/main.c:15:3: warning: (near initialization for ‘servos[1]’) [enabled by default]
+../src/main.c:15:3: warning: excess elements in scalar initializer [enabled by default]
+../src/main.c:15:3: warning: (near initialization for ‘servos[1]’) [enabled by default]
+../src/main.c:15:3: warning: excess elements in scalar initializer [enabled by default]
+../src/main.c:15:3: warning: (near initialization for ‘servos[1]’) [enabled by default]
+../src/main.c:15:3: warning: excess elements in scalar initializer [enabled by default]
+../src/main.c:15:3: warning: (near initialization for ‘servos[1]’) [enabled by default]
+../src/main.c:16:3: warning: braces around scalar initializer [enabled by default]
+../src/main.c:16:3: warning: (near initialization for ‘servos[2]’) [enabled by default]
+../src/main.c:16:3: warning: initialization makes integer from pointer without a cast [enabled by default]
+../src/main.c:16:3: warning: (near initialization for ‘servos[2]’) [enabled by default]
+../src/main.c:16:3: warning: excess elements in scalar initializer [enabled by default]
+../src/main.c:16:3: warning: (near initialization for ‘servos[2]’) [enabled by default]
+../src/main.c:16:3: warning: excess elements in scalar initializer [enabled by default]
+../src/main.c:16:3: warning: (near initialization for ‘servos[2]’) [enabled by default]
+../src/main.c:16:3: warning: excess elements in scalar initializer [enabled by default]
+../src/main.c:16:3: warning: (near initialization for ‘servos[2]’) [enabled by default]
+../src/main.c:17:3: warning: braces around scalar initializer [enabled by default]
+../src/main.c:17:3: warning: (near initialization for ‘servos[3]’) [enabled by default]
+../src/main.c:17:3: warning: initialization makes integer from pointer without a cast [enabled by default]
+../src/main.c:17:3: warning: (near initialization for ‘servos[3]’) [enabled by default]
+../src/main.c:17:3: warning: excess elements in scalar initializer [enabled by default]
+../src/main.c:17:3: warning: (near initialization for ‘servos[3]’) [enabled by default]
+../src/main.c:17:3: warning: excess elements in scalar initializer [enabled by default]
+../src/main.c:17:3: warning: (near initialization for ‘servos[3]’) [enabled by default]
+../src/main.c:17:3: warning: excess elements in scalar initializer [enabled by default]
+../src/main.c:17:3: warning: (near initialization for ‘servos[3]’) [enabled by default]
+../src/main.c:19:3: warning: braces around scalar initializer [enabled by default]
+../src/main.c:19:3: warning: (near initialization for ‘servos[4]’) [enabled by default]
+../src/main.c:19:3: warning: initialization makes integer from pointer without a cast [enabled by default]
+../src/main.c:19:3: warning: (near initialization for ‘servos[4]’) [enabled by default]
+../src/main.c:19:3: warning: excess elements in scalar initializer [enabled by default]
+../src/main.c:19:3: warning: (near initialization for ‘servos[4]’) [enabled by default]
+../src/main.c:19:3: warning: excess elements in scalar initializer [enabled by default]
+../src/main.c:19:3: warning: (near initialization for ‘servos[4]’) [enabled by default]
+../src/main.c:19:3: warning: excess elements in scalar initializer [enabled by default]
+../src/main.c:19:3: warning: (near initialization for ‘servos[4]’) [enabled by default]
+../src/main.c:20:3: warning: braces around scalar initializer [enabled by default]
+../src/main.c:20:3: warning: (near initialization for ‘servos[5]’) [enabled by default]
+../src/main.c:20:3: warning: initialization makes integer from pointer without a cast [enabled by default]
+../src/main.c:20:3: warning: (near initialization for ‘servos[5]’) [enabled by default]
+../src/main.c:20:3: warning: excess elements in scalar initializer [enabled by default]
+../src/main.c:20:3: warning: (near initialization for ‘servos[5]’) [enabled by default]
+../src/main.c:20:3: warning: excess elements in scalar initializer [enabled by default]
+../src/main.c:20:3: warning: (near initialization for ‘servos[5]’) [enabled by default]
+../src/main.c:20:3: warning: excess elements in scalar initializer [enabled by default]
+../src/main.c:20:3: warning: (near initialization for ‘servos[5]’) [enabled by default]
+../src/main.c:21:3: warning: braces around scalar initializer [enabled by default]
+../src/main.c:21:3: warning: (near initialization for ‘servos[6]’) [enabled by default]
+../src/main.c:21:3: warning: initialization makes integer from pointer without a cast [enabled by default]
+../src/main.c:21:3: warning: (near initialization for ‘servos[6]’) [enabled by default]
+../src/main.c:21:3: warning: excess elements in scalar initializer [enabled by default]
+../src/main.c:21:3: warning: (near initialization for ‘servos[6]’) [enabled by default]
+../src/main.c:21:3: warning: excess elements in scalar initializer [enabled by default]
+../src/main.c:21:3: warning: (near initialization for ‘servos[6]’) [enabled by default]
+../src/main.c:21:3: warning: excess elements in scalar initializer [enabled by default]
+../src/main.c:21:3: warning: (near initialization for ‘servos[6]’) [enabled by default]
+../src/main.c:22:3: warning: braces around scalar initializer [enabled by default]
+../src/main.c:22:3: warning: (near initialization for ‘servos[7]’) [enabled by default]
+../src/main.c:22:3: warning: initialization makes integer from pointer without a cast [enabled by default]
+../src/main.c:22:3: warning: (near initialization for ‘servos[7]’) [enabled by default]
+../src/main.c:22:3: warning: excess elements in scalar initializer [enabled by default]
+../src/main.c:22:3: warning: (near initialization for ‘servos[7]’) [enabled by default]
+../src/main.c:22:3: warning: excess elements in scalar initializer [enabled by default]
+../src/main.c:22:3: warning: (near initialization for ‘servos[7]’) [enabled by default]
+../src/main.c:22:3: warning: excess elements in scalar initializer [enabled by default]
+../src/main.c:22:3: warning: (near initialization for ‘servos[7]’) [enabled by default]
+../src/main.c: In function ‘main’:
+../src/main.c:41:2: warning: implicit declaration of function ‘init_servos’ [-Wimplicit-function-declaration]
+../src/main.c:44:2: warning: implicit declaration of function ‘init_servotimer’ [-Wimplicit-function-declaration]
+../src/main.c:35:6: warning: unused variable ‘cnt’ [-Wunused-variable]
+make: *** [src/main.o] Fehler 1
+14:07:23 **** Incremental Build of configuration Release for project quadpod_brain ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega168 -DF_CPU=20000000UL -MMD -MP -MF"src/main.d" -MT"src/main.d" -c -o "src/main.o" "../src/main.c"
+../src/main.c: In function ‘main’:
+Finished building: ../src/main.c
+../src/main.c:37:6: warning: unused variable ‘cnt’ [-Wunused-variable]
+ 
+Building file: ../src/servo.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega168 -DF_CPU=20000000UL -MMD -MP -MF"src/servo.d" -MT"src/servo.d" -c -o "src/servo.o" "../src/servo.c"
+../src/servo.c: In function ‘init_servotimer’:
+../src/servo.c:32:2: error: ‘ORC1A’ undeclared (first use in this function)
+../src/servo.c:32:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/servo.c: At top level:
+../src/servo.c:36:1: error: expected identifier or ‘(’ before ‘void’
+../src/servo.c:36:1: error: expected identifier or ‘(’ before ‘void’
+make: *** [src/servo.o] Fehler 1
+14:07:41 **** Incremental Build of configuration Release for project quadpod_brain ****
+make all 
+Building file: ../src/servo.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega168 -DF_CPU=20000000UL -MMD -MP -MF"src/servo.d" -MT"src/servo.d" -c -o "src/servo.o" "../src/servo.c"
+../src/servo.c:36:1: error: expected identifier or ‘(’ before ‘void’
+../src/servo.c:36:1: error: expected identifier or ‘(’ before ‘void’
+make: *** [src/servo.o] Fehler 1
+14:09:03 **** Incremental Build of configuration Release for project quadpod_brain ****
+make all 
+Building file: ../src/servo.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega168 -DF_CPU=20000000UL -MMD -MP -MF"src/servo.d" -MT"src/servo.d" -c -o "src/servo.o" "../src/servo.c"
+Finished building: ../src/servo.c
+ 
+Building target: quadpod_brain.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,quadpod_brain.map -mmcu=atmega168 -o "quadpod_brain.elf"  ./src/main.o ./src/servo.o   
+./src/servo.o:(.bss+0x4): multiple definition of `servos'
+./src/main.o:(.data+0x0): first defined here
+/usr/lib/gcc/avr/4.7.2/../../../avr/bin/ld: Warning: size of symbol `servos' changed from 56 in ./src/main.o to 2 in ./src/servo.o
+./src/main.o: In function `main':
+main.c:(.text.startup+0x1e): undefined reference to `init_servotimer'
+collect2: error: ld returned 1 exit status
+make: *** [quadpod_brain.elf] Fehler 1
+14:16:26 **** Incremental Build of configuration Release for project quadpod_brain ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega168 -DF_CPU=20000000UL -MMD -MP -MF"src/main.d" -MT"src/main.d" -c -o "src/main.o" "../src/main.c"
+../src/main.c: In function ‘main’:
+Finished building: ../src/main.c
+../src/main.c:37:6: warning: unused variable ‘cnt’ [-Wunused-variable]
+ 
+Building file: ../src/servo.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega168 -DF_CPU=20000000UL -MMD -MP -MF"src/servo.d" -MT"src/servo.d" -c -o "src/servo.o" "../src/servo.c"
+../src/servo.c: In function ‘__vector_11’:
+../src/servo.c:36:9: error: incompatible types when assigning to type ‘p_servo’ from type ‘struct s_servo’
+../src/servo.c:47:11: error: redefinition of ‘servo’
+../src/servo.c:32:10: note: previous definition of ‘servo’ was here
+../src/servo.c:47:19: error: incompatible types when initializing type ‘p_servo’ using type ‘struct s_servo’
+../src/servo.c: At top level:
+../src/servo.c:51:1: error: expected identifier or ‘(’ before ‘}’ token
+make: *** [src/servo.o] Fehler 1
+14:16:58 **** Incremental Build of configuration Release for project quadpod_brain ****
+make all 
+Building file: ../src/servo.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega168 -DF_CPU=20000000UL -MMD -MP -MF"src/servo.d" -MT"src/servo.d" -c -o "src/servo.o" "../src/servo.c"
+Finished building: ../src/servo.c
+ 
+Building target: quadpod_brain.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,quadpod_brain.map -mmcu=atmega168 -o "quadpod_brain.elf"  ./src/main.o ./src/servo.o   
+./src/servo.o:(.bss+0x4): multiple definition of `servos'
+./src/main.o:(.data+0x0): first defined here
+/usr/lib/gcc/avr/4.7.2/../../../avr/bin/ld: Warning: size of symbol `servos' changed from 48 in ./src/main.o to 2 in ./src/servo.o
+./src/main.o: In function `main':
+main.c:(.text.startup+0x1e): undefined reference to `init_servotimer'
+collect2: error: ld returned 1 exit status
+make: *** [quadpod_brain.elf] Fehler 1
+14:17:17 **** Incremental Build of configuration Release for project quadpod_brain ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega168 -DF_CPU=20000000UL -MMD -MP -MF"src/main.d" -MT"src/main.d" -c -o "src/main.o" "../src/main.c"
+../src/main.c: In function ‘main’:
+Finished building: ../src/main.c
+../src/main.c:37:6: warning: unused variable ‘cnt’ [-Wunused-variable]
+ 
+Building target: quadpod_brain.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,quadpod_brain.map -mmcu=atmega168 -o "quadpod_brain.elf"  ./src/main.o ./src/servo.o   
+./src/main.o: In function `main':
+main.c:(.text.startup+0x1e): undefined reference to `init_servotimer'
+collect2: error: ld returned 1 exit status
+make: *** [quadpod_brain.elf] Fehler 1
+14:17:54 **** Incremental Build of configuration Release for project quadpod_brain ****
+make all 
+Building file: ../src/servo.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega168 -DF_CPU=20000000UL -MMD -MP -MF"src/servo.d" -MT"src/servo.d" -c -o "src/servo.o" "../src/servo.c"
+Finished building: ../src/servo.c
+ 
+Building target: quadpod_brain.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,quadpod_brain.map -mmcu=atmega168 -o "quadpod_brain.elf"  ./src/main.o ./src/servo.o   
+./src/servo.o:(.bss+0x4): multiple definition of `_servos'
+./src/main.o:(.data+0x0): first defined here
+/usr/lib/gcc/avr/4.7.2/../../../avr/bin/ld: Warning: size of symbol `_servos' changed from 48 in ./src/main.o to 2 in ./src/servo.o
+./src/main.o: In function `main':
+main.c:(.text.startup+0x1e): undefined reference to `init_servotimer'
+collect2: error: ld returned 1 exit status
+make: *** [quadpod_brain.elf] Fehler 1
+14:18:53 **** Incremental Build of configuration Release for project quadpod_brain ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega168 -DF_CPU=20000000UL -MMD -MP -MF"src/main.d" -MT"src/main.d" -c -o "src/main.o" "../src/main.c"
+../src/main.c: In function ‘main’:
+Finished building: ../src/main.c
+../src/main.c:37:6: warning: unused variable ‘cnt’ [-Wunused-variable]
+ 
+Building file: ../src/servo.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega168 -DF_CPU=20000000UL -MMD -MP -MF"src/servo.d" -MT"src/servo.d" -c -o "src/servo.o" "../src/servo.c"
+Finished building: ../src/servo.c
+ 
+Building target: quadpod_brain.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,quadpod_brain.map -mmcu=atmega168 -o "quadpod_brain.elf"  ./src/main.o ./src/servo.o   
+Finished building target: quadpod_brain.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S quadpod_brain.elf  >"quadpod_brain.lss"
+Finished building: quadpod_brain.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -O ihex quadpod_brain.elf  "quadpod_brain.hex"
+Finished building: quadpod_brain.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex quadpod_brain.elf  "quadpod_brain.eep"
+Finished building: quadpod_brain.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega168 quadpod_brain.elf
+AVR Memory Usage
+----------------
+Device: atmega168
+
+Program:     562 bytes (3.4% Full)
+(.text + .data + .bootloader)
+
+Data:         54 bytes (5.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:19:15 **** Incremental Build of configuration Release for project quadpod_brain ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega168 -DF_CPU=20000000UL -MMD -MP -MF"src/main.d" -MT"src/main.d" -c -o "src/main.o" "../src/main.c"
+../src/main.c: In function ‘main’:
+../src/main.c:37:6: warning: unused variable ‘cnt’ [-Wunused-variable]
+Finished building: ../src/main.c
+ 
+Building file: ../src/servo.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega168 -DF_CPU=20000000UL -MMD -MP -MF"src/servo.d" -MT"src/servo.d" -c -o "src/servo.o" "../src/servo.c"
+Finished building: ../src/servo.c
+ 
+Building target: quadpod_brain.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,quadpod_brain.map -mmcu=atmega168 -o "quadpod_brain.elf"  ./src/main.o ./src/servo.o   
+Finished building target: quadpod_brain.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S quadpod_brain.elf  >"quadpod_brain.lss"
+Finished building: quadpod_brain.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -O ihex quadpod_brain.elf  "quadpod_brain.hex"
+Finished building: quadpod_brain.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex quadpod_brain.elf  "quadpod_brain.eep"
+Finished building: quadpod_brain.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega168 quadpod_brain.elf
+AVR Memory Usage
+----------------
+Device: atmega168
+
+Program:     570 bytes (3.5% Full)
+(.text + .data + .bootloader)
+
+Data:         62 bytes (6.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:20:40 **** Incremental Build of configuration Release for project quadpod_brain ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega168 -DF_CPU=20000000UL -MMD -MP -MF"src/main.d" -MT"src/main.d" -c -o "src/main.o" "../src/main.c"
+../src/main.c: In function ‘main’:
+../src/main.c:37:6: warning: unused variable ‘cnt’ [-Wunused-variable]
+Finished building: ../src/main.c
+ 
+Building file: ../src/servo.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega168 -DF_CPU=20000000UL -MMD -MP -MF"src/servo.d" -MT"src/servo.d" -c -o "src/servo.o" "../src/servo.c"
+Finished building: ../src/servo.c
+ 
+Building target: quadpod_brain.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,quadpod_brain.map -mmcu=atmega168 -o "quadpod_brain.elf"  ./src/main.o ./src/servo.o   
+Finished building target: quadpod_brain.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S quadpod_brain.elf  >"quadpod_brain.lss"
+Finished building: quadpod_brain.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -O ihex quadpod_brain.elf  "quadpod_brain.hex"
+Finished building: quadpod_brain.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex quadpod_brain.elf  "quadpod_brain.eep"
+Finished building: quadpod_brain.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega168 quadpod_brain.elf
+AVR Memory Usage
+----------------
+Device: atmega168
+
+Program:     572 bytes (3.5% Full)
+(.text + .data + .bootloader)
+
+Data:         62 bytes (6.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:22:09 **** Incremental Build of configuration Release for project quadpod_brain ****
+make all 
+Building file: ../src/servo.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega168 -DF_CPU=20000000UL -MMD -MP -MF"src/servo.d" -MT"src/servo.d" -c -o "src/servo.o" "../src/servo.c"
+../src/servo.c: In function ‘set_servo’:
+../src/servo.c:57:3: error: ‘servos’ undeclared (first use in this function)
+../src/servo.c:57:3: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/servo.o] Fehler 1
+14:22:18 **** Incremental Build of configuration Release for project quadpod_brain ****
+make all 
+Building file: ../src/servo.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega168 -DF_CPU=20000000UL -MMD -MP -MF"src/servo.d" -MT"src/servo.d" -c -o "src/servo.o" "../src/servo.c"
+Finished building: ../src/servo.c
+ 
+Building target: quadpod_brain.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,quadpod_brain.map -mmcu=atmega168 -o "quadpod_brain.elf"  ./src/main.o ./src/servo.o   
+Finished building target: quadpod_brain.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S quadpod_brain.elf  >"quadpod_brain.lss"
+Finished building: quadpod_brain.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -O ihex quadpod_brain.elf  "quadpod_brain.hex"
+Finished building: quadpod_brain.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex quadpod_brain.elf  "quadpod_brain.eep"
+Finished building: quadpod_brain.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega168 quadpod_brain.elf
+AVR Memory Usage
+----------------
+Device: atmega168
+
+Program:     626 bytes (3.8% Full)
+(.text + .data + .bootloader)
+
+Data:         62 bytes (6.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:27:34 **** Incremental Build of configuration Release for project quadpod_brain ****
+make all 
+Building file: ../src/servo.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega168 -DF_CPU=20000000UL -MMD -MP -MF"src/servo.d" -MT"src/servo.d" -c -o "src/servo.o" "../src/servo.c"
+Finished building: ../src/servo.c
+ 
+Building target: quadpod_brain.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,quadpod_brain.map -mmcu=atmega168 -o "quadpod_brain.elf"  ./src/main.o ./src/servo.o   
+Finished building target: quadpod_brain.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S quadpod_brain.elf  >"quadpod_brain.lss"
+Finished building: quadpod_brain.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -O ihex quadpod_brain.elf  "quadpod_brain.hex"
+Finished building: quadpod_brain.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex quadpod_brain.elf  "quadpod_brain.eep"
+Finished building: quadpod_brain.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega168 quadpod_brain.elf
+AVR Memory Usage
+----------------
+Device: atmega168
+
+Program:     650 bytes (4.0% Full)
+(.text + .data + .bootloader)
+
+Data:         62 bytes (6.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:28:09 **** Incremental Build of configuration Release for project quadpod_brain ****
+make all 
+Building target: quadpod_brain.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,quadpod_brain.map -mmcu=atmega168 -o "quadpod_brain.elf"  ./src/main.o ./src/servo.o   
+Finished building target: quadpod_brain.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S quadpod_brain.elf  >"quadpod_brain.lss"
+Finished building: quadpod_brain.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -O ihex quadpod_brain.elf  "quadpod_brain.hex"
+Finished building: quadpod_brain.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex quadpod_brain.elf  "quadpod_brain.eep"
+Finished building: quadpod_brain.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega168 quadpod_brain.elf
+AVR Memory Usage
+----------------
+Device: atmega168
+
+Program:     650 bytes (4.0% Full)
+(.text + .data + .bootloader)
+
+Data:         62 bytes (6.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:31:40 **** Clean-only build of configuration Release for project quadpod_brain ****
+make clean 
+rm -rf  ./src/main.o ./src/servo.o  ./src/main.d ./src/servo.d  quadpod_brain.eep  quadpod_brain.hex  quadpod_brain.lss  sizedummy  quadpod_brain.elf
+ 
+14:31:54 **** Build of configuration Release for project quadpod_brain ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega168 -DF_CPU=20000000UL -MMD -MP -MF"src/main.d" -MT"src/main.d" -c -o "src/main.o" "../src/main.c"
+../src/main.c: In function ‘main’:
+../src/main.c:37:6: warning: unused variable ‘cnt’ [-Wunused-variable]
+Finished building: ../src/main.c
+ 
+Building file: ../src/servo.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega168 -DF_CPU=20000000UL -MMD -MP -MF"src/servo.d" -MT"src/servo.d" -c -o "src/servo.o" "../src/servo.c"
+Finished building: ../src/servo.c
+ 
+Building target: quadpod_brain.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,quadpod_brain.map -mmcu=atmega168 -o "quadpod_brain.elf"  ./src/main.o ./src/servo.o   
+Finished building target: quadpod_brain.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S quadpod_brain.elf  >"quadpod_brain.lss"
+Finished building: quadpod_brain.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -O ihex quadpod_brain.elf  "quadpod_brain.hex"
+Finished building: quadpod_brain.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex quadpod_brain.elf  "quadpod_brain.eep"
+Finished building: quadpod_brain.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega168 quadpod_brain.elf
+AVR Memory Usage
+----------------
+Device: atmega168
+
+Program:     650 bytes (4.0% Full)
+(.text + .data + .bootloader)
+
+Data:         62 bytes (6.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:35:58 **** Incremental Build of configuration Release for project quadpod_brain ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega168 quadpod_brain.elf
+AVR Memory Usage
+----------------
+Device: atmega168
+
+Program:     650 bytes (4.0% Full)
+(.text + .data + .bootloader)
+
+Data:         62 bytes (6.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:30:30 **** Incremental Build of configuration Release for project quadpod_brain ****
+make all 
+Building file: ../src/gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega168 -DF_CPU=20000000UL -MMD -MP -MF"src/gpio.d" -MT"src/gpio.d" -c -o "src/gpio.o" "../src/gpio.c"
+Finished building: ../src/gpio.c
+ 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega168 -DF_CPU=20000000UL -MMD -MP -MF"src/main.d" -MT"src/main.d" -c -o "src/main.o" "../src/main.c"
+../src/main.c: In function ‘main’:
+../src/main.c:32:6: warning: unused variable ‘cnt’ [-Wunused-variable]
+Finished building: ../src/main.c
+ 
+Building file: ../src/uarth.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega168 -DF_CPU=20000000UL -MMD -MP -MF"src/uarth.d" -MT"src/uarth.d" -c -o "src/uarth.o" "../src/uarth.c"
+../src/uarth.c: In function ‘uart_init’:
+../src/uarth.c:14:2: error: ‘UCSRB’ undeclared (first use in this function)
+../src/uarth.c:14:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/uarth.c:14:15: error: ‘RXCIE’ undeclared (first use in this function)
+../src/uarth.c:14:28: error: ‘RXEN’ undeclared (first use in this function)
+../src/uarth.c:14:40: error: ‘TXEN’ undeclared (first use in this function)
+../src/uarth.c: At top level:
+../src/uarth.c:26:1: warning: return type defaults to ‘int’ [enabled by default]
+../src/uarth.c: In function ‘ISR’:
+../src/uarth.c:26:1: warning: type of ‘USART_RXC_vect’ defaults to ‘int’ [enabled by default]
+../src/uarth.c:28:12: error: ‘UDR’ undeclared (first use in this function)
+../src/uarth.c:29:3: warning: implicit declaration of function ‘isr_recv’ [-Wimplicit-function-declaration]
+../src/uarth.c:31:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/uarth.o] Fehler 1
+09:31:09 **** Incremental Build of configuration Release for project quadpod_brain ****
+make all 
+Building file: ../src/uarth.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega168 -DF_CPU=20000000UL -MMD -MP -MF"src/uarth.d" -MT"src/uarth.d" -c -o "src/uarth.o" "../src/uarth.c"
+../src/uarth.c: In function ‘uart_init’:
+../src/uarth.c:14:2: error: ‘UCSRB’ undeclared (first use in this function)
+../src/uarth.c:14:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/uarth.c:14:15: error: ‘RXCIE’ undeclared (first use in this function)
+../src/uarth.c:14:28: error: ‘RXEN’ undeclared (first use in this function)
+../src/uarth.c:14:40: error: ‘TXEN’ undeclared (first use in this function)
+../src/uarth.c: In function ‘USART_RXC_vect’:
+../src/uarth.c:26:1: warning: ‘USART_RXC_vect’ appears to be a misspelled signal handler [enabled by default]
+../src/uarth.c:28:12: error: ‘UDR’ undeclared (first use in this function)
+../src/uarth.c:29:3: warning: implicit declaration of function ‘isr_recv’ [-Wimplicit-function-declaration]
+make: *** [src/uarth.o] Fehler 1
+09:34:20 **** Incremental Build of configuration Release for project quadpod_brain ****
+make all 
+Building file: ../src/uarth.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega168 -DF_CPU=20000000UL -MMD -MP -MF"src/uarth.d" -MT"src/uarth.d" -c -o "src/uarth.o" "../src/uarth.c"
+../src/uarth.c: In function ‘uart_init’:
+../src/uarth.c:15:2: error: ‘UCSRB’ undeclared (first use in this function)
+../src/uarth.c:15:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/uarth.c:15:15: error: ‘RXCIE’ undeclared (first use in this function)
+../src/uarth.c:15:28: error: ‘RXEN’ undeclared (first use in this function)
+../src/uarth.c:15:40: error: ‘TXEN’ undeclared (first use in this function)
+../src/uarth.c: In function ‘USART_RXC_vect’:
+../src/uarth.c:35:1: warning: ‘USART_RXC_vect’ appears to be a misspelled signal handler [enabled by default]
+../src/uarth.c:37:12: error: ‘UDR’ undeclared (first use in this function)
+../src/uarth.c:38:3: warning: implicit declaration of function ‘isr_recv’ [-Wimplicit-function-declaration]
+../src/uarth.c: In function ‘USART_TXC_vect’:
+../src/uarth.c:42:1: warning: ‘USART_TXC_vect’ appears to be a misspelled signal handler [enabled by default]
+../src/uarth.c:44:3: warning: implicit declaration of function ‘isr_send’ [-Wimplicit-function-declaration]
+make: *** [src/uarth.o] Fehler 1
+09:38:37 **** Incremental Build of configuration Release for project quadpod_brain ****
+make all 
+Building file: ../src/uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega168 -DF_CPU=20000000UL -MMD -MP -MF"src/uart.d" -MT"src/uart.d" -c -o "src/uart.o" "../src/uart.c"
+../src/uart.c: In function ‘uart_init’:
+../src/uart.c:15:2: error: ‘UCSRB’ undeclared (first use in this function)
+../src/uart.c:15:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/uart.c:15:15: error: ‘RXCIE’ undeclared (first use in this function)
+../src/uart.c:15:28: error: ‘RXEN’ undeclared (first use in this function)
+../src/uart.c:15:40: error: ‘TXEN’ undeclared (first use in this function)
+../src/uart.c: In function ‘USART_RXC_vect’:
+../src/uart.c:35:1: warning: ‘USART_RXC_vect’ appears to be a misspelled signal handler [enabled by default]
+../src/uart.c:37:12: error: ‘UDR’ undeclared (first use in this function)
+../src/uart.c: In function ‘USART_TXC_vect’:
+../src/uart.c:42:1: warning: ‘USART_TXC_vect’ appears to be a misspelled signal handler [enabled by default]
+make: *** [src/uart.o] Fehler 1
+09:54:08 **** Clean-only build of configuration Release for project quadpod_brain ****
+make clean 
+rm -rf  ./src/gpio.o ./src/main.o ./src/servo.o ./src/uart.o  ./src/gpio.d ./src/main.d ./src/servo.d ./src/uart.d  quadpod_brain.eep  quadpod_brain.hex  quadpod_brain.lss  sizedummy  quadpod_brain.elf
+ 
+09:54:08 **** Incremental Build of configuration Release for project quadpod_brain ****
+make all 
+Building file: ../src/gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega8 -DF_CPU=16000000UL -MMD -MP -MF"src/gpio.d" -MT"src/gpio.d" -c -o "src/gpio.o" "../src/gpio.c"
+Finished building: ../src/gpio.c
+ 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega8 -DF_CPU=16000000UL -MMD -MP -MF"src/main.d" -MT"src/main.d" -c -o "src/main.o" "../src/main.c"
+../src/main.c: In function ‘main’:
+Finished building: ../src/main.c
+../src/main.c:32:6: warning: unused variable ‘cnt’ [-Wunused-variable]
+ 
+Building file: ../src/servo.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega8 -DF_CPU=16000000UL -MMD -MP -MF"src/servo.d" -MT"src/servo.d" -c -o "src/servo.o" "../src/servo.c"
+Finished building: ../src/servo.c
+ 
+Building file: ../src/uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega8 -DF_CPU=16000000UL -MMD -MP -MF"src/uart.d" -MT"src/uart.d" -c -o "src/uart.o" "../src/uart.c"
+Finished building: ../src/uart.c
+ 
+Building target: quadpod_brain.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,quadpod_brain.map -mmcu=atmega8 -o "quadpod_brain.elf"  ./src/gpio.o ./src/main.o ./src/servo.o ./src/uart.o   
+Finished building target: quadpod_brain.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S quadpod_brain.elf  >"quadpod_brain.lss"
+Finished building: quadpod_brain.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -O ihex quadpod_brain.elf  "quadpod_brain.hex"
+Finished building: quadpod_brain.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex quadpod_brain.elf  "quadpod_brain.eep"
+Finished building: quadpod_brain.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega8 quadpod_brain.elf
+AVR Memory Usage
+----------------
+Device: atmega8
+
+Program:     760 bytes (9.3% Full)
+(.text + .data + .bootloader)
+
+Data:         66 bytes (6.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+09:54:16 **** Clean-only build of configuration Release for project quadpod_brain ****
+make clean 
+rm -rf  ./src/gpio.o ./src/main.o ./src/servo.o ./src/uart.o  ./src/gpio.d ./src/main.d ./src/servo.d ./src/uart.d  quadpod_brain.eep  quadpod_brain.hex  quadpod_brain.lss  sizedummy  quadpod_brain.elf
+ 
+09:54:26 **** Build of configuration Release for project quadpod_brain ****
+make all 
+Building file: ../src/gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega8 -DF_CPU=16000000UL -MMD -MP -MF"src/gpio.d" -MT"src/gpio.d" -c -o "src/gpio.o" "../src/gpio.c"
+Finished building: ../src/gpio.c
+ 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega8 -DF_CPU=16000000UL -MMD -MP -MF"src/main.d" -MT"src/main.d" -c -o "src/main.o" "../src/main.c"
+../src/main.c: In function ‘main’:
+Finished building: ../src/main.c
+../src/main.c:32:6: warning: unused variable ‘cnt’ [-Wunused-variable]
+ 
+Building file: ../src/servo.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega8 -DF_CPU=16000000UL -MMD -MP -MF"src/servo.d" -MT"src/servo.d" -c -o "src/servo.o" "../src/servo.c"
+Finished building: ../src/servo.c
+ 
+Building file: ../src/uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega8 -DF_CPU=16000000UL -MMD -MP -MF"src/uart.d" -MT"src/uart.d" -c -o "src/uart.o" "../src/uart.c"
+Finished building: ../src/uart.c
+ 
+Building target: quadpod_brain.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,quadpod_brain.map -mmcu=atmega8 -o "quadpod_brain.elf"  ./src/gpio.o ./src/main.o ./src/servo.o ./src/uart.o   
+Finished building target: quadpod_brain.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S quadpod_brain.elf  >"quadpod_brain.lss"
+Finished building: quadpod_brain.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -O ihex quadpod_brain.elf  "quadpod_brain.hex"
+Finished building: quadpod_brain.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex quadpod_brain.elf  "quadpod_brain.eep"
+Finished building: quadpod_brain.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega8 quadpod_brain.elf
+AVR Memory Usage
+----------------
+Device: atmega8
+
+Program:     760 bytes (9.3% Full)
+(.text + .data + .bootloader)
+
+Data:         66 bytes (6.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+10:03:37 **** Incremental Build of configuration Release for project quadpod_brain ****
+make all 
+Building file: ../src/uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega8 -DF_CPU=16000000UL -MMD -MP -MF"src/uart.d" -MT"src/uart.d" -c -o "src/uart.o" "../src/uart.c"
+Finished building: ../src/uart.c
+ 
+Building target: quadpod_brain.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,quadpod_brain.map -mmcu=atmega8 -o "quadpod_brain.elf"  ./src/gpio.o ./src/main.o ./src/servo.o ./src/uart.o   
+Finished building target: quadpod_brain.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S quadpod_brain.elf  >"quadpod_brain.lss"
+Finished building: quadpod_brain.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -O ihex quadpod_brain.elf  "quadpod_brain.hex"
+Finished building: quadpod_brain.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex quadpod_brain.elf  "quadpod_brain.eep"
+Finished building: quadpod_brain.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega8 quadpod_brain.elf
+AVR Memory Usage
+----------------
+Device: atmega8
+
+Program:     772 bytes (9.4% Full)
+(.text + .data + .bootloader)
+
+Data:         66 bytes (6.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+10:07:14 **** Incremental Build of configuration Release for project quadpod_brain ****
+make all 
+Building file: ../src/uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega8 -DF_CPU=16000000UL -MMD -MP -MF"src/uart.d" -MT"src/uart.d" -c -o "src/uart.o" "../src/uart.c"
+../src/uart.c: In function ‘uart_recv’:
+../src/uart.c:27:2: warning: suggest parentheses around operand of ‘!’ or change ‘&’ to ‘&&’ or ‘!’ to ‘~’ [-Wparentheses]
+Finished building: ../src/uart.c
+../src/uart.c: In function ‘uard_send’:
+ 
+Building target: quadpod_brain.elf
+Invoking: AVR C Linker
+../src/uart.c:32:2: warning: suggest parentheses around operand of ‘!’ or change ‘&’ to ‘&&’ or ‘!’ to ‘~’ [-Wparentheses]
+avr-gcc -Wl,-Map,quadpod_brain.map -mmcu=atmega8 -o "quadpod_brain.elf"  ./src/gpio.o ./src/main.o ./src/servo.o ./src/uart.o   
+Finished building target: quadpod_brain.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S quadpod_brain.elf  >"quadpod_brain.lss"
+Finished building: quadpod_brain.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -O ihex quadpod_brain.elf  "quadpod_brain.hex"
+Finished building: quadpod_brain.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex quadpod_brain.elf  "quadpod_brain.eep"
+Finished building: quadpod_brain.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega8 quadpod_brain.elf
+AVR Memory Usage
+----------------
+Device: atmega8
+
+Program:     788 bytes (9.6% Full)
+(.text + .data + .bootloader)
+
+Data:         66 bytes (6.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+10:07:41 **** Incremental Build of configuration Release for project quadpod_brain ****
+make all 
+Building file: ../src/uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega8 -DF_CPU=16000000UL -MMD -MP -MF"src/uart.d" -MT"src/uart.d" -c -o "src/uart.o" "../src/uart.c"
+Finished building: ../src/uart.c
+ 
+Building target: quadpod_brain.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,quadpod_brain.map -mmcu=atmega8 -o "quadpod_brain.elf"  ./src/gpio.o ./src/main.o ./src/servo.o ./src/uart.o   
+Finished building target: quadpod_brain.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S quadpod_brain.elf  >"quadpod_brain.lss"
+Finished building: quadpod_brain.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -O ihex quadpod_brain.elf  "quadpod_brain.hex"
+Finished building: quadpod_brain.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex quadpod_brain.elf  "quadpod_brain.eep"
+Finished building: quadpod_brain.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega8 quadpod_brain.elf
+AVR Memory Usage
+----------------
+Device: atmega8
+
+Program:     792 bytes (9.7% Full)
+(.text + .data + .bootloader)
+
+Data:         66 bytes (6.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+10:18:07 **** Incremental Build of configuration Release for project quadpod_brain ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega8 -DF_CPU=16000000UL -MMD -MP -MF"src/main.d" -MT"src/main.d" -c -o "src/main.o" "../src/main.c"
+../src/main.c: In function ‘main’:
+../src/main.c:33:6: warning: unused variable ‘cnt’ [-Wunused-variable]
+Finished building: ../src/main.c
+ 
+Building file: ../src/uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega8 -DF_CPU=16000000UL -MMD -MP -MF"src/uart.d" -MT"src/uart.d" -c -o "src/uart.o" "../src/uart.c"
+Finished building: ../src/uart.c
+ 
+Building target: quadpod_brain.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,quadpod_brain.map -mmcu=atmega8 -o "quadpod_brain.elf"  ./src/gpio.o ./src/main.o ./src/servo.o ./src/uart.o   
+Finished building target: quadpod_brain.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S quadpod_brain.elf  >"quadpod_brain.lss"
+Finished building: quadpod_brain.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -O ihex quadpod_brain.elf  "quadpod_brain.hex"
+Finished building: quadpod_brain.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex quadpod_brain.elf  "quadpod_brain.eep"
+Finished building: quadpod_brain.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega8 quadpod_brain.elf
+AVR Memory Usage
+----------------
+Device: atmega8
+
+Program:     794 bytes (9.7% Full)
+(.text + .data + .bootloader)
+
+Data:         66 bytes (6.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 

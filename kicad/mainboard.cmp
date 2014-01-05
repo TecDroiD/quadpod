@@ -1,0 +1,171 @@
+Cmp-Mod V01 Created by CvPcb (2012-apr-16-27)-stable date = Fr 03 Jan 2014 09:34:22 CET
+
+BeginCmp
+TimeStamp = /52C64FDE;
+Reference = C1;
+ValeurCmp = 1µ;
+IdModule  = C1V5;
+EndCmp
+
+BeginCmp
+TimeStamp = /52C64E27;
+Reference = C2;
+ValeurCmp = 100n;
+IdModule  = C2;
+EndCmp
+
+BeginCmp
+TimeStamp = /52C66133;
+Reference = C3;
+ValeurCmp = 22p;
+IdModule  = C1;
+EndCmp
+
+BeginCmp
+TimeStamp = /52C6613C;
+Reference = C4;
+ValeurCmp = 22p;
+IdModule  = C1;
+EndCmp
+
+BeginCmp
+TimeStamp = /52C64E55;
+Reference = P1;
+ValeurCmp = Batt;
+IdModule  = SIL-2;
+EndCmp
+
+BeginCmp
+TimeStamp = /52C65067;
+Reference = P2;
+ValeurCmp = UART;
+IdModule  = SIL-4;
+EndCmp
+
+BeginCmp
+TimeStamp = /52C65377;
+Reference = P3;
+ValeurCmp = ISP6;
+IdModule  = pin_array_3x2;
+EndCmp
+
+BeginCmp
+TimeStamp = /52C65434;
+Reference = P4;
+ValeurCmp = SERVO;
+IdModule  = SIL-3;
+EndCmp
+
+BeginCmp
+TimeStamp = /52C65D46;
+Reference = P5;
+ValeurCmp = SERVO;
+IdModule  = SIL-3;
+EndCmp
+
+BeginCmp
+TimeStamp = /52C65D35;
+Reference = P6;
+ValeurCmp = SERVO;
+IdModule  = SIL-3;
+EndCmp
+
+BeginCmp
+TimeStamp = /52C65D43;
+Reference = P7;
+ValeurCmp = SERVO;
+IdModule  = SIL-3;
+EndCmp
+
+BeginCmp
+TimeStamp = /52C65D59;
+Reference = P8;
+ValeurCmp = SERVO;
+IdModule  = SIL-3;
+EndCmp
+
+BeginCmp
+TimeStamp = /52C65D52;
+Reference = P9;
+ValeurCmp = SERVO;
+IdModule  = SIL-3;
+EndCmp
+
+BeginCmp
+TimeStamp = /52C65D56;
+Reference = P10;
+ValeurCmp = SERVO;
+IdModule  = SIL-3;
+EndCmp
+
+BeginCmp
+TimeStamp = /52C65D55;
+Reference = P11;
+ValeurCmp = SERVO;
+IdModule  = SIL-3;
+EndCmp
+
+BeginCmp
+TimeStamp = /52C65D6B;
+Reference = P12;
+ValeurCmp = SENSOR;
+IdModule  = SIL-3;
+EndCmp
+
+BeginCmp
+TimeStamp = /52C65EF6;
+Reference = P13;
+ValeurCmp = SENSOR;
+IdModule  = SIL-3;
+EndCmp
+
+BeginCmp
+TimeStamp = /52C65EE8;
+Reference = P14;
+ValeurCmp = SENSOR;
+IdModule  = SIL-3;
+EndCmp
+
+BeginCmp
+TimeStamp = /52C65EF3;
+Reference = P15;
+ValeurCmp = SENSOR;
+IdModule  = SIL-3;
+EndCmp
+
+BeginCmp
+TimeStamp = /52C65F00;
+Reference = P16;
+ValeurCmp = SENSOR;
+IdModule  = SIL-3;
+EndCmp
+
+BeginCmp
+TimeStamp = /52C65EFF;
+Reference = P17;
+ValeurCmp = SENSOR;
+IdModule  = SIL-3;
+EndCmp
+
+BeginCmp
+TimeStamp = /52C6694F;
+Reference = U1;
+ValeurCmp = LD1084;
+IdModule  = TO220_VERT;
+EndCmp
+
+BeginCmp
+TimeStamp = /52C64DFA;
+Reference = U2;
+ValeurCmp = ATMEGA168-P;
+IdModule  = DIP-28__300_ELL;
+EndCmp
+
+BeginCmp
+TimeStamp = /52C66143;
+Reference = X1;
+ValeurCmp = 20MHz;
+IdModule  = HC-49V;
+EndCmp
+
+EndListe

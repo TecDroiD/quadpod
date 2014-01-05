@@ -1,0 +1,52 @@
+/*
+ * main.c
+ *
+ *  Created on: 01.01.2014
+ *      Author: tecdroid
+ */
+#include <avr/io.h>
+#include <util/delay.h>
+
+#include <stdlib.h>
+#include <stdint.h>
+
+typedef struct s_servo {
+	char *DDR;
+	char *PORT;
+	char pinmask;
+	char value;
+} t_servo, *p_servo;
+
+t_servo servos[] = {
+		{&DDRB, &PORTB, (1<<PB0), 0},
+		{&DDRB, &PORTD, (1<<PD5), 0},
+		{&DDRB, &PORTD, (1<<PD6), 0},
+		{&DDRB, &PORTD, (1<<PD7), 0},
+
+		{&DDRB, &PORTB, (1<<PB1), 0},
+		{&DDRB, &PORTB, (1<<PB2), 0},
+		{&DDRB, &PORTB, (1<<PB3), 0},
+		{&DDRB, &PORTB, (1<<PB4), 0}
+
+};
+
+static const int CNT_SERVOS = 8;
+
+int main(int argc, char **argv){
+	int cnt;
+	// Programmierpause
+	_delay_ms(1000);
+
+	// setze Servopins als Ausgang
+	for (cnt = 0; cnt < CNT_SERVOS; cnt++) {
+		p_servo servo = &servos[cnt];
+		*(servo->DDR) |= servo->pinmask;
+	}
+
+
+	while (1) {
+		// eventloop
+	}
+}
+
+

@@ -1,0 +1,68 @@
+/*
+ * main.c
+ *
+ *  Created on: 01.01.2014
+ *      Author: tecdroid
+ */
+#include <avr/io.h>
+#include <util/delay.h>
+
+#include <stdlib.h>
+#include <stdint.h>
+
+typedef struct s_servo {
+	volatile unsigned char *DDR;
+	volatile unsigned char *PORT;
+	volatile char pinmask;
+	volatile char value;
+} t_servo, *p_servo;
+
+
+t_servo servos[] = {
+		{&DDRB, &PORTB, (1<<PB0), 0},
+		{&DDRB, &PORTD, (1<<PD5), 0},
+		{&DDRB, &PORTD, (1<<PD6), 0},
+		{&DDRB, &PORTD, (1<<PD7), 0},
+
+		{&DDRB, &PORTB, (1<<PB1), 0},
+		{&DDRB, &PORTB, (1<<PB2), 0},
+		{&DDRB, &PORTB, (1<<PB3), 0},
+		{&DDRB, &PORTB, (1<<PB4), 0}
+
+};
+
+static const int CNT_SERVOS = 8;
+
+void init_servos (p_servo servos, int cnt ) {
+	for (cnt = 0; cnt < CNT_SERVOS; cnt++) {
+		p_servo servo = &servos[cnt];
+		*(servo->DDR) |= servo->pinmask;
+	}
+}
+
+typedef struct s_gpio {
+
+} t_gpio, *p_gpio;
+
+
+int main(int argc, char **argv){
+	int cnt;
+
+	// Programmierpause
+	_delay_ms(1000);
+
+	// setze Servopins als Ausgang
+	init_servos (servos, CNT_SERVOS);
+
+	// TODO: Timer für Servos initialisieren
+	init_servotimer()
+	// TODO: UART initialisieren
+	// TODO: GPIOs initialisieren
+	// TODO: Steuerprotokoll erfinden
+
+	// eventloop
+	while (1) {
+	}
+}
+
+

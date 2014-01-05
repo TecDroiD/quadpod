@@ -1,0 +1,14 @@
+/*
+ * uart.h
+ *
+ *  Created on: 04.01.2014
+ *      Author: tecdroid
+ */
+
+#ifndef UART_H_
+#define UART_H_
+
+class uart {
+};
+
+#endif /* UART_H_ */

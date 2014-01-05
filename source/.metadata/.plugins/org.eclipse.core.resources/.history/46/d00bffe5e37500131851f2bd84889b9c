@@ -1,0 +1,21 @@
+/*
+ * uart.h
+ *
+ *  Created on: 04.01.2014
+ *      Author: tecdroid
+ */
+
+#ifndef UART_H_
+#define UART_H_
+
+#include <avr/io.h>
+#include <avr/interrupt.h>
+
+#include <stdlib.h>
+#include <stdint.h>
+
+void uart_init();
+void uart_recv(char *p);
+void uard_send(char *p);
+
+#endif /* UART_H_ */

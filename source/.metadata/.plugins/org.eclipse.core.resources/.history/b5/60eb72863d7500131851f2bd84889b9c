@@ -1,0 +1,30 @@
+/*
+ * servo.h
+ *
+ *  Created on: 04.01.2014
+ *      Author: tecdroid
+ */
+
+#ifndef SERVO_H_
+#define SERVO_H_
+
+typedef struct s_servo {
+	volatile unsigned char *DDR;
+	volatile unsigned char *PORT;
+	volatile char pinmask;
+	volatile char value;
+} t_servo, *p_servo;
+
+
+void init_servos (p_servo servos, int cnt ) {
+	for (cnt = 0; cnt < CNT_SERVOS; cnt++) {
+		p_servo servo = &servos[cnt];
+		*(servo->DDR) |= servo->pinmask;
+	}
+}
+
+void init_servotimer (void) {
+
+}
+
+#endif /* SERVO_H_ */

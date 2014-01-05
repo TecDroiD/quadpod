@@ -1,0 +1,23 @@
+/*
+ * main.c
+ *
+ *  Created on: 01.01.2014
+ *      Author: tecdroid
+ */
+#include <avr/io.h>
+
+#include <stdlib.h>
+#include <stdint.h>
+
+typedef struct s_servo {
+	char *DDR;
+	char *PORT;
+	char pinmask;
+	char value;
+} t_servo, *p_servo;
+
+int main(int argc, char **argv) {
+
+}
+
+

@@ -1,0 +1,13 @@
+/*
+ * main.c
+ *
+ *  Created on: 01.01.2014
+ *      Author: tecdroid
+ */
+#include <avr/io.h>
+
+int main(int argc, char **argv) {
+
+}
+
+
